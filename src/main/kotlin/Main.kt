@@ -1,4 +1,4 @@
-abstract class Car(val model:String, val color: String,val speed:Int):Pricable {
+abstract class Car(val model:String, val color: String,val speed:Int):Priceable {
     abstract fun getFuelType()
 }
 class BMW( model:String,  color: String, speed:Int):Car(model,color,speed) {
@@ -18,7 +18,7 @@ class Tesla( model:String,  color: String, speed:Int):Car(model,color,speed) {
         println("It cost $10000000000")
     }
 }
-interface Pricable {
+interface Priceable {
     fun printPrice()
 }
 
